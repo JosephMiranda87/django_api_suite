@@ -35,11 +35,6 @@ class DemoRestApi(APIView):
       return Response({'message': 'Dato guardado exitosamente.', 'data': data}, status=status.HTTP_201_CREATED)
 
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-
-
 class DemoRestApiItem(APIView):
     """
     Maneja operaciones sobre un recurso individual identificado por <str:id>
